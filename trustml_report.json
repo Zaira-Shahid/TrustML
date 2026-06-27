@@ -1,0 +1,61 @@
+{
+  "model_name": "RandomForest Classifier",
+  "timestamp": "2026-06-27 09:19:42",
+  "trust_score": 81.4,
+  "grade": "B \u2014 Trustworthy \ud83d\udfe2",
+  "privacy_score": 58.0,
+  "fairness_score": 90.7,
+  "robustness_score": 98.0,
+  "detailed_results": {
+    "privacy": {
+      "membership_inference": {
+        "attack": "Membership Inference",
+        "accuracy": 0.71,
+        "auc_score": 0.6723,
+        "risk_level": "MEDIUM \ud83d\udfe1"
+      }
+    },
+    "fairness": {
+      "demographic_parity": {
+        "metric": "Demographic Parity",
+        "group_rates": {
+          "0": 0.5203,
+          "1": 0.4276
+        },
+        "difference": 0.0927,
+        "risk_level": "MEDIUM \ud83d\udfe1",
+        "interpretation": "Group 0 aur Group 1 mein 0.0927 ka farq hai"
+      },
+      "disparate_impact": {
+        "metric": "Disparate Impact",
+        "di_ratio": 0.8219,
+        "risk_level": "LOW \ud83d\udfe2",
+        "interpretation": "DI ratio: 0.8219"
+      },
+      "equalized_odds": {
+        "metric": "Equalized Odds",
+        "tpr_difference": 0.0299,
+        "fpr_difference": 0.0724,
+        "risk_level": "MEDIUM \ud83d\udfe1",
+        "interpretation": "TPR farq: 0.0299, FPR farq: 0.0724"
+      }
+    },
+    "robustness": {
+      "noise_perturbation": {
+        "attack": "Noise Perturbation",
+        "accuracy_drop": 0.0033,
+        "risk_level": "LOW \ud83d\udfe2"
+      },
+      "fgsm": {
+        "attack": "FGSM-style",
+        "accuracy_drop": -0.01,
+        "risk_level": "LOW \ud83d\udfe2"
+      },
+      "feature_squeezing": {
+        "attack": "Feature Squeezing",
+        "accuracy_drop": 0.0067,
+        "risk_level": "LOW \ud83d\udfe2"
+      }
+    }
+  }
+}
