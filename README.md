@@ -1,14 +1,4 @@
----
 
-## 🌍 Who Should Use TrustML?
-
-- **ML Engineers** — Audit before deployment
-- **Hospitals & Healthcare** — Medical AI compliance
-- **Banks & Finance** — Loan model fairness check
-- **Researchers** — Benchmark model trustworthiness
-- **EU AI Act Compliance** — Explainability & fairness requirements
-
----
 
 ## 📈 Trust Score Formula
 
